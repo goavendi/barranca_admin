@@ -1,0 +1,18 @@
+.table__feedback{
+}
+
+.table__feedback td:nth-child(2){
+	width: 50%;
+}
+
+
+.feedback__area .page__heading {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.table__feedback button{
+	padding: 0rem 1rem;
+	margin-top: 10px;
+}

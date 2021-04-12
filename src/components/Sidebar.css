@@ -1,0 +1,101 @@
+/* _______________sidebar_______________ */
+.app__sidebar{
+	padding-top: 40px;
+	background: #FAFAFA;
+	min-height: calc(100vh -  70px);
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.app__sidebar ul{
+	margin:0;padding:0;
+}
+
+.app__sidebar ul li{
+	list-style: none;
+}
+
+
+.app__sidebar aside > ul > li{
+	padding: 0 20px;
+}
+
+.app__sidebar ul li.active{
+	border-left:3px solid #000;
+	background: rgba(51,51,51,.1);
+}
+
+.app__sidebar ul li a{
+	color:#666;
+	line-height: 40px;
+}
+
+
+.app__sidebar ul ul{
+	margin-left: 30px;
+}
+
+.app__sidebar svg{
+	margin-right: 15px;
+}
+
+
+.icon{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 15px;
+	position: relative;
+	top: 4px;
+}
+
+.icon-housekeeping{
+	background : transparent url(../assets/icons/housekeeping.svg) 0 0 no-repeat;
+	background-size: contain;
+}
+
+.icon-team{
+	background : transparent url(../assets/icons/teammembers.svg) 0 0 no-repeat;
+	background-size: contain;
+}
+
+.icon-pizza{
+	background : transparent url(../assets/icons/foodandbev.svg) 0 0 no-repeat;
+	background-size: contain;
+}
+
+
+/*______________________________RESPONSIVE MOBILE */
+
+.app__mobile__menu{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	box-shadow: 1px 1px 3px 3px rgba(0,0,0,.2);
+	transition: all .4s ease;
+	padding-top: 16px;
+}
+
+.app__mobile__menu.hidden{
+	left:-300px;
+}
+
+
+.app__mobile__menu.shown{
+	left:0;
+}
+
+.app__menu__close{
+	position: absolute;
+	top: 16px;
+	right: 16px;
+}
+
+#sidemenu__toggle{
+	cursor: pointer;
+	float:left;
+	margin-top: 18px;
+	margin-right: 18px;
+	margin-left: 14px;
+}

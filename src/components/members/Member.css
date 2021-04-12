@@ -1,0 +1,58 @@
+.page__members{
+	
+}
+
+.page__members .table td, .page__members .table th{
+	border-top: 0;
+	border-bottom: 1px solid #dee2e6;
+}
+
+.member__img{
+	width: 54px;
+	height: 54px;
+	float:left;
+}
+
+.member__name{
+	display: block;
+}
+
+.member__staff__id{
+	display: inline-block;
+}
+
+.page_add_member .form-control{
+	background: rgba(0,0,0,.05);
+}
+
+.page_add_member .form-control:focus{
+	outline: none;
+	box-shadow: none;
+	background: rgba(0,0,0,.05);
+}
+
+.member__form .profile__image{
+	margin-top: 10px;
+}
+
+.member__form .profile__image img{
+	width: 100px;
+	height: 100px;
+}
+
+
+.table__members td:last-child{
+	padding: .75rem 0;
+	width: 130px;
+}
+
+
+.table__members .btn{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+.btn-delete{
+	padding-right: 0;
+}

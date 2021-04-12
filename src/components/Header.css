@@ -1,0 +1,79 @@
+#app__account__nav{
+}
+#app__account__nav ul {
+	list-style: none;
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+
+#app__account__nav ul li{
+	float:left;
+	position:relative;
+}
+
+#app__account__nav .app_notifications {
+	position: absolute;
+	float:left;
+	top: 30px;
+	right: 0;
+	width: 300px;
+	background: #fff;
+	color:#000;
+	padding: 20px;
+	border:1px solid #c9c9c9;
+	padding: 15px;
+}
+
+.app_notifications li{
+	border-bottom: 1px solid #e9e9e9;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.app_notifications h4{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.app_notifications p{
+	margin:0;padding:0;
+}
+
+.app_notifications p.room{
+	color: #999;
+}
+
+.notify-dot{
+	background: orange;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+    border: 2px solid #fff;
+    position:absolute;
+    top: 0;
+    right: 6px;
+}
+
+
+.app__account__menu{
+	position: relative;
+}
+
+#app__account__nav .app__account__menu .dropdown{
+	position: absolute;
+	top: 30px;
+	right: 0;
+	margin: 0;
+	border:1px solid #c9c9c9;
+	background: #fff;
+}
+
+#app__account__nav .app__account__menu .dropdown li{
+	padding: 10px;
+	cursor: pointer;
+}

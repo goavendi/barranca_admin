@@ -1,0 +1,334 @@
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+select {
+  --webkit-appearance: none;
+}
+
+table p {
+  margin: 0;
+  padding: 0;
+}
+
+.table td {
+  border-top: 0 !important;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.btn-black {
+  background: black !important;
+  color: #fff !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.w-100 {
+  max-width: 100% !important;
+}
+
+.content-padding {
+  padding: 30px;
+}
+
+/* Header ______________________________ */
+
+#app__header {
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /*position:relative;*/
+  background: white;
+}
+
+#logo {
+  /*color: purple;*/
+  float: left;
+  /*font-size: 2em;*/
+  /*background : transparent url(/logo_purple.svg) 0 0 no-repeat;*/
+  /*background-size: contain;*/
+  /*height: 18px;*/
+  /*width: 70px;*/
+  padding: 0;
+  margin: 0;
+  /*text-indent: -9999px; */
+}
+
+#splash_logo {
+  color: purple;
+  float: left;
+  background: transparent url(/logo_purple.svg) 0 0 no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  text-indent: -9999px;
+}
+
+.main {
+  z-index: 0;
+}
+
+.app__nav__top {
+  /*border-bottom: 1px solid rgba(0,0,0,.1);*/
+}
+
+#app__account__nav {
+  margin-top: 10px;
+  float: right;
+  color: grey;
+}
+
+#app__account__nav span {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#app__account__nav span.active svg {
+  color: #000 !important;
+}
+
+.app__hotel__id {
+  font-size: 0.8em;
+  color: #777;
+}
+
+.app__hotel__info {
+  margin: 20px 0;
+}
+
+.app__hotel__info img {
+  height: 52px;
+  width: 52px;
+  float: left;
+  margin-right: 30px;
+}
+
+.app__hotel__info h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.app__hotel__id {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* ________________Content______________ */
+#app__content {
+  /*padding:30px ;*/
+}
+.app__front_office {
+}
+
+.page__heading {
+  font-size: 20px;
+  font-weight: bold;
+  /*margin-top: 20px;*/
+  /*margin-bottom: 20px;*/
+}
+
+.status__area {
+  min-height: calc(100vh - 200px);
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.status__area.border-right {
+  border-right: 2px solid #e9e9e9;
+}
+
+.app__front_office td p {
+  margin: 0;
+  padding: 0;
+}
+
+.app__front_office .status__area .page__heading {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.app__front_office .room {
+  font-size: 0.9em;
+}
+
+.app__front_office .action__room {
+  color: #999;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.app__front_office .label {
+}
+
+.app__front_office .btn__message {
+  background: #000;
+  color: #fff;
+}
+
+/*extensions......*/
+.extensions__area {
+}
+
+.extensions__area .page__heading {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.extensions__area tr td {
+  border-top: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* all menus ______________________________ */
+.btn-add-menu {
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* ______________manage services________________ */
+.app__switch {
+  top: 5px;
+}
+
+/*______________________________*/
+
+.select-status {
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
+  background: rgba(51, 51, 51, 0.1);
+  margin-top: 3px;
+}
+
+.select-status option {
+  background: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+.select-status.orange {
+  border: 1px solid #ffc400;
+  color: #ffc400;
+  background: rgba(255, 196, 0, 0.1);
+}
+
+.select-status.green {
+  border: 1px solid rgb(0, 213, 98);
+  color: rgb(0, 213, 98);
+  background: rgba(0, 213, 98, 0.1);
+}
+
+.select-member {
+  border: 0;
+  font-weight: bold;
+  outline: none;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-left: -5px;
+}
+
+/*global table*/
+.table__requests tr td:first-child {
+  padding-left: 30px;
+  width: 20%;
+}
+
+.table__requests tr td:last-child {
+  padding-right: 30px;
+}
+
+.table__requests td {
+  border-top: 0 !important;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.btn-narrow {
+  padding: 0rem 1rem;
+}
+
+@media (max-width: 600px) {
+  .table__requests {
+    /*display: none;*/
+  }
+
+  .table__requests tr td:first-child {
+    width: 30%;
+  }
+
+  .table__requests tr td:last-child {
+    float: right;
+  }
+
+  .table__requests tr td:nth-child(2n-1) {
+    padding-left: 30px;
+  }
+
+  .table__requests tr td:nth-child(2) {
+    width: 70%;
+  }
+
+  .table__requests tr {
+    display: inline-block;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .table__requests td {
+    float: left;
+    border-bottom: 0;
+    height: 70px;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .select-status {
+    float: right;
+  }
+}
+
+.app__notification {
+  border: 1px solid red;
+}
+
+/*LOAD MORE_____________*/
+
+.app_show_more_action {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.app_show_more_action:hover {
+  text-decoration: underline;
+}
+
+.app_load_more {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.important_notification {
+  color: orange;
+  margin-right: 5px;
+}
+
+.btn_default {
+  background-color: #777 !important;
+  color: #fff !important;
+  margin: 5px;
+}

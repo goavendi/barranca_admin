@@ -1,0 +1,58 @@
+.page__add__food select{
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+.page__add__food textarea{
+	min-height: 100px;
+}
+
+.page__add__food input[type="file"]{
+	background: none !important;
+	padding: 0;
+}
+
+
+.table .menu__action{
+	padding: .75em 0;
+}
+
+.menu__action .btn{
+	margin: 0 8px;
+}
+
+
+.menu__action .btn:first-child{margin-left: 0;}
+
+.menu__action .btn:last-child{
+	margin-right: 0;
+}
+
+.menu__item img{
+	margin-top: 10px;
+}
+
+.menuType{
+	text-transform: capitalize;
+}
+
+.padding{
+	padding: 30px;
+}
+
+/*pagination______________________________*/
+
+.app__pagination{
+	list-style: none;
+	padding: 0;
+}
+
+.app__pagination li{
+	display: inline-block;
+	margin: 10px;
+	font-weight: bold;
+}
+
+.active{
+	color: red;
+}
