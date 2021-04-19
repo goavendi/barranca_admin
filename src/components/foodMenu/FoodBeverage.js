@@ -199,19 +199,11 @@ const FoodBeverage = () => {
                       <td>
                         <p className="name">
                           <strong>
-                            {request.bookingId
-                              ? request.bookingId.guestId.firstName
-                              : 'N/A'}{' '}
-                            {request.bookingId
-                              ? request.bookingId.guestId.lastName
-                              : 'N/A'}
+                            {request.guestId ? request.guestId.lastName : 'N/A'}{' '}
                           </strong>
                         </p>
                         <p className="room">
-                          Room{' '}
-                          {request.bookingId
-                            ? request.bookingId.roomId.number
-                            : 'N/A'}
+                          Room {request.roomId ? request.roomId.number : 'N/A'}
                         </p>
                         {/*<p className="action__room"><span id="" className="">Change Room</span></p>*/}
                       </td>

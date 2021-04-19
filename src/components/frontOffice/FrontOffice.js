@@ -179,14 +179,6 @@ const FrontOffice = () => {
     }
   };
 
-  /* const checkIsNewRequest = (request)=>{
-    for(const [,notification] of globalNotifications.entries()){
-      if(request._id === notification._id){
-        return <BsFillCircleFill className="important_notification" />
-      }
-    }
-  }*/
-
   return (
     <section id="app__content" className="app__front_office">
       <div className="container no-margin w-100">
@@ -202,19 +194,11 @@ const FrontOffice = () => {
                       <td>
                         <p className="name">
                           <strong>
-                            {request.bookingId
-                              ? request.bookingId.guestId.firstName
-                              : 'N/A'}{' '}
-                            {request.bookingId
-                              ? request.bookingId.guestId.lastName
-                              : ''}
+                            {request.guestId ? request.guestId.lastName : 'N/A'}{' '}
                           </strong>
                         </p>
                         <p className="room">
-                          Room{' '}
-                          {request.bookingId
-                            ? request.bookingId.roomId.number
-                            : 'N/A'}
+                          Room {request.roomId ? request.roomId.number : 'N/A'}
                         </p>
                         <p className="action__room">
                           <span id="" className="">
