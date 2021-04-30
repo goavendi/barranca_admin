@@ -210,7 +210,7 @@ const FoodBeverage = () => {
                         </p>
                         <p className="room">
                           Villa:{' '}
-                          {request.guestId
+                          {request.guestId && request.guestId.villaName
                             ? request.guestId.villaName.replace(/_/g, ' ')
                             : 'N/A'}{' '}
                         </p>
