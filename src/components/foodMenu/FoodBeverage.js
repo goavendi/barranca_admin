@@ -184,6 +184,10 @@ const FoodBeverage = () => {
     }
   };
 
+  const handleClockClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section id="app__content" className="app__front_office">
       <div className="container">
@@ -199,11 +203,16 @@ const FoodBeverage = () => {
                       <td>
                         <p className="name">
                           <strong>
-                            {request.guestId ? request.guestId.lastName : 'N/A'}{' '}
+                            {request.guestId
+                              ? request.guestId.lastName
+                              : 'No guest!'}{' '}
                           </strong>
                         </p>
                         <p className="room">
-                          Room {request.roomId ? request.roomId.number : 'N/A'}
+                          Villa:{' '}
+                          {request.guestId
+                            ? request.guestId.villaName.replace(/_/g, ' ')
+                            : 'N/A'}{' '}
                         </p>
                         {/*<p className="action__room"><span id="" className="">Change Room</span></p>*/}
                       </td>
@@ -233,6 +242,7 @@ const FoodBeverage = () => {
                           <span>
                             <a
                               href="#target"
+                              onClick={(e) => handleClockClick(e)}
                               data-toggle="tooltip"
                               title="Requested At"
                             >
