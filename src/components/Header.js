@@ -145,7 +145,7 @@ const Header = () => {
                       </span>
                     </li>
                     &nbsp;
-                    <li ref={notificationRef}>
+                    <li ref={notificationRef} style={{ display: 'none' }}>
                       <span
                         className={showNotifications ? 'active' : null}
                         onClick={(e) => toggleNotifications(e)}
